@@ -29,6 +29,17 @@ public class App {
 
         Kawa mojaKawa = new Kawa();// użycie konstruktora domyślnego
 
+        String napis;//deklaracja zmiennej napis
+        // przypisanie wartości do zmiennej napis
+        napis = mojaKawa.pobierzNazwe();
+
+        System.out.println(napis);
+
+        //Zadanie: Stworz zmienną twojaKawa z użyciem
+        //konsturktora argumentowego z argumentem
+        //"Kawa z mlekiem" i wypisz na konsolę
+        //tak jak w przykladzie powyżej
+
     }
 
     static int sumaLiczb(int a, int b, int c){
