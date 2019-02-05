@@ -25,9 +25,17 @@ public class App {
         int pojemnik;
         pojemnik = sumaLiczb(1,2,3);// wywołanie metody sumaLiczb
         System.out.println(pojemnik);
+        System.out.println(suma2Liczb(1,2));
+
+        Kawa mojaKawa = new Kawa();// użycie konstruktora domyślnego
+
     }
 
     static int sumaLiczb(int a, int b, int c){
         return a+b+c;
+    }
+
+    static int suma2Liczb(int a, int b){
+        return a+b;
     }
 }
