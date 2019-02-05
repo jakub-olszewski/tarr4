@@ -23,7 +23,7 @@ public class App {
         System.out.println(number2);
 
         int pojemnik;
-        pojemnik = sumaLiczb(1,2,3);
+        pojemnik = sumaLiczb(1,2,3);// wywołanie metody sumaLiczb
         System.out.println(pojemnik);
     }
 
