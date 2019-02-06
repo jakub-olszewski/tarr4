@@ -26,4 +26,9 @@ public class PozycjaZamowienia {
     {
         return cena;
     }
+
+    public String toString(){
+
+        return nazwa+ " " +cena;
+    }
 }

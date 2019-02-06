@@ -1,5 +1,7 @@
 package pl.sdacademy.tarr4.operatory;
 
+import pl.sdacademy.tarr4.obiekty.PozycjaZamowienia;
+
 /**
  * OperatoryMain
  *
@@ -15,9 +17,21 @@ public class OperatoryMain {
          * Wypisz informacje o produktach oraz sumę wszystkich pozycji
          *
          * Uwagi
-         * Uzywamy konstruktorów
+         * Uzywamy konstruktorów PozycjaZamowienia
+         * Metod pobierzCene()
+         * Tworzymy zmienna suma
+         * Uzywamy sout'a
          */
 
+        PozycjaZamowienia kanapkaDrwalaPozycja = new PozycjaZamowienia("Kanapka Drwala", 16.95f);
+        PozycjaZamowienia mcZestawDuzyPozycja = new PozycjaZamowienia("Zestaw Duzy", 28.70f);
+        PozycjaZamowienia frytkiKarbowane = new PozycjaZamowienia("Frytki Karbowane", 12.65f);
 
+        float suma = 0;
+        suma = kanapkaDrwalaPozycja.pobierzCena()+ mcZestawDuzyPozycja.pobierzCena()+frytkiKarbowane.pobierzCena();
+        System.out.println(suma);
+        System.out.println(kanapkaDrwalaPozycja.toString());
+        System.out.println(mcZestawDuzyPozycja.toString());
+        System.out.println(frytkiKarbowane.toString());
     }
 }
