@@ -42,7 +42,11 @@ public class App {
         //konsturktora argumentowego z argumentem
         //"Kawa z mlekiem" i wypisz na konsolę
         //tak jak w przykladzie powyżej
+
+
         Kawa twojaKawa;
+
+
         twojaKawa = new Kawa("Kawa z mlekiem");
         String napis2 = twojaKawa.pobierzNazwe();
         System.out.println(napis2);
