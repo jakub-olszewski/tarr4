@@ -1,4 +1,4 @@
-package pl.sdacademy.tarr4;
+package pl.sdacademy.tarr4.interfejs;
 
 /**
  * DworzecMcDonaldImpl
@@ -6,7 +6,7 @@ package pl.sdacademy.tarr4;
  * @author: Jakub Olszewski [http://github.com/jakub-olszewski]
  * @date: 05.02.2019 20:56
  **/
-public class DworzecMcDonaldImpl implements McDonald{
+public class DworzecMcDonaldImpl implements McDonald {
 
     // Zadanie: Dodaj implementację metody z interfejsu
     // metoda wypisuje tekst "Frytki"

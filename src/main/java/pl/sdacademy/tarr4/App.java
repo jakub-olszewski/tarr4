@@ -1,4 +1,8 @@
 package pl.sdacademy.tarr4;
+
+import pl.sdacademy.tarr4.interfejs.DworzecMcDonaldImpl;
+import pl.sdacademy.tarr4.interfejs.McDonald;
+
 //generate test
 //alt + enter
 public class App {
@@ -43,10 +47,7 @@ public class App {
         twojaKawa = new Kawa("Kawa z mlekiem");
         String napis2 = twojaKawa.pobierzNazwe();
         System.out.println(napis2);
-        McDonald mcDonaldZDworca = new DworzecMcDonaldImpl();
-        double kwota = 20.01;
-        mcDonaldZDworca.poproszeFrytki(kwota);
-        mcDonaldZDworca.poproszeMcFlury(kwota);
+
     }
 
     static int sumaLiczb(int a, int b, int c){
