@@ -45,9 +45,45 @@ public class OperatoryMain {
         liczbaA -= 2;
         // liczbaA wynosi 8
 
+        // *=   - zwielokrotnienie
+        int liczbaB = 2;
+        liczbaB *= 3;
+        // liczbaB wynosi 6
+
+        // /=   - dzielenie przez
+        int liczbaC = 9;
+        liczbaC /= 3;
+        // liczbaC wynosi 3
+
+
+        //==========================================
+
+
         //Arytmetyczne  +,-,*,/,%,++,--
 
+        int liczbaD = 5;
+        int liczbaE = liczbaD % 2;
+        // liczbaE wynosi 1
+        int liczbaF = liczbaE++;// zwiększenie o 1
+        // liczbaF wynosi 2
+        int liczbaG = liczbaD--;// zmniejszenie o 1
+        // liczbaG wynosi 4
+
+
+        //==========================================
+
+
         // Logiczne  &&, ||, !
+        // && - i
+        boolean nieDlugoKonczymy = true;
+        boolean jutroSaZajecia = true;
+        boolean jestCiemno = true;
+        boolean potrzebujemySwiatla = true;
+
+        boolean czyPalimySwiatlo = jestCiemno && potrzebujemySwiatla;
+        // czyPalimySwiatlo jest prawda czyli true
+
+
 
         //Relacji  <,<=,>,>=,==, !=
 
