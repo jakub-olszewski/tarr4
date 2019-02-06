@@ -33,5 +33,23 @@ public class OperatoryMain {
         System.out.println(kanapkaDrwalaPozycja.toString());
         System.out.println(mcZestawDuzyPozycja.toString());
         System.out.println(frytkiKarbowane.toString());
+
+        //Przypisania  =, +=, -=, *=, /=
+        // +=   - zwiększenie o
+        suma += kanapkaDrwalaPozycja.pobierzCena();// sume zwiekszam o cene kanapki drwala
+        suma += mcZestawDuzyPozycja.pobierzCena();
+        suma += frytkiKarbowane.pobierzCena();
+
+        // -=   - zmniejszenie o
+        int liczbaA = 10;
+        liczbaA -= 2;
+        // liczbaA wynosi 8
+
+        //Arytmetyczne  +,-,*,/,%,++,--
+
+        // Logiczne  &&, ||, !
+
+        //Relacji  <,<=,>,>=,==, !=
+
     }
 }
