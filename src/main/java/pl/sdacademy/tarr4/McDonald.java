@@ -9,4 +9,7 @@ package pl.sdacademy.tarr4;
 public interface McDonald {
 
     //Zadanie: Stworz metode poproszeFrytki
+    public void poproszeFrytki(double kwota);
+
+    public void poproszeMcFlury(double kwota);
 }

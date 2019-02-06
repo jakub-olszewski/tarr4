@@ -43,7 +43,10 @@ public class App {
         twojaKawa = new Kawa("Kawa z mlekiem");
         String napis2 = twojaKawa.pobierzNazwe();
         System.out.println(napis2);
-
+        McDonald mcDonaldZDworca = new DworzecMcDonaldImpl();
+        double kwota = 20.01;
+        mcDonaldZDworca.poproszeFrytki(kwota);
+        mcDonaldZDworca.poproszeMcFlury(kwota);
     }
 
     static int sumaLiczb(int a, int b, int c){
@@ -53,4 +56,6 @@ public class App {
     static int suma2Liczb(int a, int b){
         return a+b;
     }
+
+
 }
