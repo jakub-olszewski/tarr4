@@ -1,4 +1,4 @@
-package pl.sdacademy.tarr4;
+package pl.sdacademy.tarr4.konstruktor;
 
 /**
  * Kawa

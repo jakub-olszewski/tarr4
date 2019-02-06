@@ -1,7 +1,6 @@
 package pl.sdacademy.tarr4;
 
-import pl.sdacademy.tarr4.interfejs.DworzecMcDonaldImpl;
-import pl.sdacademy.tarr4.interfejs.McDonald;
+import pl.sdacademy.tarr4.konstruktor.Kawa;
 
 //generate test
 //alt + enter
