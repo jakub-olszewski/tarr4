@@ -8,9 +8,6 @@ package pl.sdacademy.tarr4.interfejs;
  **/
 public class DworzecMcDonaldImpl implements McDonald {
 
-    // Zadanie: Dodaj implementację metody z interfejsu
-    // metoda wypisuje tekst "Frytki"
-
     @Override//adnotacja nadpisz metode z interfejsu
     public void poproszeFrytki(double kwota) {
         System.out.println("Frytki");
