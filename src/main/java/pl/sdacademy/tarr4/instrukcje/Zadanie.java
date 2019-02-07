@@ -22,6 +22,12 @@ public class Zadanie {
         System.out.println("Powinno być false :"+jestPelnoletniaZBydgoszczy);
     }
 
+    /**
+     * Rozwiązanie zadania
+     * @param wiek
+     * @param miasto
+     * @return
+     */
     private static boolean czyPelnoletniaZBydgoszczy(int wiek, String miasto) {
         if(wiek >= 18 && miasto =="Bydgoszcz") {
             return true;
@@ -30,22 +36,52 @@ public class Zadanie {
         }
     }
 
+    /**
+     * Przykład z bez użycia instrukcji warunkowej if
+     * @param wiek
+     * @param miasto
+     * @return
+     */
     private static boolean czyPelnoletniaZBydgoszczy2(int wiek, String miasto) {
         return wiek >= 18 && miasto == "Bydgoszcz";
     }
 
+    /**
+     * Przykład z użyciem metody equalsIgnoreCase() dostępnej w obiekcie String
+     * @param wiek
+     * @param miasto
+     * @return
+     */
     private static boolean czyPelnoletniaZBydgoszczy3(int wiek, String miasto) {
         return wiek >= 18 && miasto.equalsIgnoreCase("bydgoszcz");
     }
 
+    /**
+     * Przykład zastąpienia wykorzystania operatora >= metodą o nazwie czyPelnoletnia()
+     * oraz zastąpienia metody equalsIgnoreCase() czytelnieszą metodą
+     * o nazwie jestZBydgoszczy()
+     * @param wiek
+     * @param miasto
+     * @return
+     */
     private static boolean czyPelnoletniaZBydgoszczy4(int wiek, String miasto) {
         return czyPelnoletnia(wiek) && jestZBydgoszczy(miasto);
     }
 
+    /**
+     * Metoda pomocnicza do metod powyżej
+     * @param miasto
+     * @return
+     */
     private static boolean jestZBydgoszczy(String miasto) {
         return miasto.equalsIgnoreCase("bydgoszcz");
     }
 
+    /**
+     * Rozwiazanie zadania
+     * @param wiek
+     * @return
+     */
     private static boolean czyPelnoletnia(int wiek) {
         if(wiek >= 18){
             return true;
