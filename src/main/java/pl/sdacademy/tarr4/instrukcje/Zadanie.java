@@ -1,4 +1,4 @@
-package pl.sdacademy.tarr4.instrukcje;
+package pl.sdacademy.tarr4.instrukcje;// informacja o pakiecie a w którym się znajdujemy
 
 /**
  * Zadanie
@@ -6,14 +6,18 @@ package pl.sdacademy.tarr4.instrukcje;
  * @author: Jakub Olszewski [http://github.com/jakub-olszewski]
  * @date: 07.02.2019 18:39
  **/
-public class Zadanie {
-    public static void main(String[] args) {
+public class Zadanie {// widoczność klasy i nazwa
+    public static void main(String[] args) { // metoda main którą wykonuje program
+
         /**
-         * Utwórz metodę sprawdzającą pełnoletniość
+         * Utwórz metodę sprawdzającą pełnoletniość // komentarz
          */
 
-        boolean jestPelnolenia = czyPelnoletnia(20);
+        boolean jestPelnolenia = czyPelnoletnia(20);// instrukcja
+        // deklaruje zmienna o nazwie jestPelnolenia następnie przypisuje wartość zwróconą przez metodę
+        // czyPelnoletnia z argumentem 20 czyli wiekiem
         System.out.println("Powinno być true :"+jestPelnolenia);
+        // instrukcja wypisująca na konsoli napis "Powinno być true :" i dopisująca wartość zmiennej jestPelnolenia
 
         /**
          * Utwórz metodę sprawdzającą pełnoletniość i czy jest z Bydgoszczy
@@ -29,10 +33,13 @@ public class Zadanie {
      * @return
      */
     private static boolean czyPelnoletniaZBydgoszczy(int wiek, String miasto) {
-        if(wiek >= 18 && miasto =="Bydgoszcz") {
-            return true;
+        if(wiek >= 18 && miasto =="Bydgoszcz") {// instrukcja warunkowa sprawdzajaca czy wiek jest większy lub równy
+            // 18 &&="i" miasto jest równe słowu Bydgoszcz
+            return true;// jeśli to prawda co powyżej to
+            // return zwraca true czyli prawdę
         }else {
             return false;
+            // return zwraca false czyli fałsz
         }
     }
 
