@@ -83,9 +83,19 @@ public class OperatoryMain {
         boolean czyPalimySwiatlo = jestCiemno && potrzebujemySwiatla;
         // czyPalimySwiatlo jest prawda czyli true
 
-
+        // || - lub
+        boolean czyDrzwiOtwarte = false;
+        boolean windaNiespawna = true;
+        boolean czyJadeWinda = windaNiespawna || czyDrzwiOtwarte;
+        //
+        // ! - negacja
+        boolean nieJadeWinda = !czyJadeWinda;
 
         //Relacji  <,<=,>,>=,==, !=
+        int b=0,c=1;
+        boolean czyRowne = (b == c);
+        boolean nieRowne = (b != c);
+
 
     }
 }
