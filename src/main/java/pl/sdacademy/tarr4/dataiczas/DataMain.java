@@ -3,6 +3,7 @@ package pl.sdacademy.tarr4.dataiczas;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.concurrent.locks.LockSupport;
 
 /**
  * DataMain
@@ -33,11 +34,22 @@ public class DataMain {
             /**
              * Zadanie: Wyświetl obecną datę w formacie „12:23 01/08/2018”
              */
-            String formatDaty = "yyyy-MM-dd HH:mm:ss";
-            DateTimeFormatter formaterDaty = DateTimeFormatter.ofPattern(formatDaty);
-            String dataZZaadnia = "";
+            String formatDaty = "HH:mm dd/MM/yyyy";
+            String dataZZaadnia = dataJakoNapis(formatDaty);
+
             System.out.println("Data w formacie z zadania: " + dataZZaadnia);
         }
         }
+
+    /**
+     * Metoda zwraca date obecna jako napis
+     * @param formatDaty
+     * @return
+     */
+    private static String dataJakoNapis(String formatDaty) {
+        LocalDateTime obecnaData = LocalDateTime.now();
+        DateTimeFormatter formaterDaty = DateTimeFormatter.ofPattern(formatDaty);
+        return obecnaData.format(formaterDaty);
+    }
 
 }

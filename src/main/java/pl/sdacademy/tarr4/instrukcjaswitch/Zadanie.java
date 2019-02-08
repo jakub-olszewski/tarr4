@@ -1,5 +1,6 @@
 package pl.sdacademy.tarr4.instrukcjaswitch;
 
+import pl.sdacademy.tarr4.typwyliczeniowy.Plec;
 import pl.sdacademy.tarr4.typwyliczeniowy.Status;
 
 /**
@@ -16,7 +17,7 @@ public class Zadanie {
          * DOSTEPNY,NIEDOSTEPNY,NIEAKTYWNY
          */
         Status statusUzytkownika = Status.NIE_AKTYWNY;
-        switch(statusUzytkownika){
+        switch (statusUzytkownika) {
             case AKTYWNY:
                 System.out.println("Uzytkownik jest aktywny");
                 break;
@@ -28,6 +29,16 @@ public class Zadanie {
                 break;
             default:
                 System.out.println("Uzytkownik jest nierozpoznany");
+        }
+        Plec plecUzytkownika = Plec.MEZCZYZNA;
+        switch (plecUzytkownika) {
+            case MEZCZYZNA:
+                System.out.println("Użytkownik jest mężczyzną");
+                break;
+            case KOBIETA:
+                System.out.println("Użytkownik jest kobietą");
+                break;
+
         }
     }
 }

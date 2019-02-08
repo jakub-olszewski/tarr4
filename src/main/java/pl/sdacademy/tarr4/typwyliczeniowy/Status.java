@@ -7,5 +7,5 @@ package pl.sdacademy.tarr4.typwyliczeniowy;
  * @date: 07.02.2019 19:24
  **/
 public enum Status {
-    AKTYWNY,NIE_AKTYWNY;
+    AKTYWNY,NIE_AKTYWNY,NIEDOSTEPNY,NIEPRZYGOTOWANY;
 }
