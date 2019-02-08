@@ -25,7 +25,19 @@ public class DataMain {
             DateTimeFormatter formaterDaty = DateTimeFormatter.ofPattern(formatDaty);
             String dataSformatowanaJakoNapis = obecnaData.format(formaterDaty);
 
-            System.out.println("Data: "+dataSformatowanaJakoNapis);
+            System.out.println("Data sformatowana: " + dataSformatowanaJakoNapis);
+            System.out.println("Format daty: " + formatDaty);
+            System.out.println("Data obiekt: " + obecnaData);
+        }
+        {
+            /**
+             * Zadanie: Wyświetl obecną datę w formacie „12:23 01/08/2018”
+             */
+            String formatDaty = "yyyy-MM-dd HH:mm:ss";
+            DateTimeFormatter formaterDaty = DateTimeFormatter.ofPattern(formatDaty);
+            String dataZZaadnia = "";
+            System.out.println("Data w formacie z zadania: " + dataZZaadnia);
         }
         }
+
 }
