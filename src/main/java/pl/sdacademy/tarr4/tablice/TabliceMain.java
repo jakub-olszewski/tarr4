@@ -1,6 +1,8 @@
 package pl.sdacademy.tarr4.tablice;
 
+import pl.sdacademy.tarr4.obiekty.PozycjaZamowienia;
 import pl.sdacademy.tarr4.obiekty.User;
+import pl.sdacademy.tarr4.obiekty.Zamowienie;
 
 /**
  * TabliceMain
@@ -24,6 +26,15 @@ public class TabliceMain {
         /**
          * Zadanie: Utworz tablice 5 pozycji zamowienia
          */
+        PozycjaZamowienia[] zamowienia = new PozycjaZamowienia[5];
+        zamowienia[0] = new PozycjaZamowienia("kanapka",16.99f);
+        zamowienia[1] = new PozycjaZamowienia("frytki",6.99f);
+        zamowienia[2] = new PozycjaZamowienia("pepsi",4.99f);
+        zamowienia[3] = new PozycjaZamowienia("fanta",6.99f);
+        zamowienia[4] = new PozycjaZamowienia("woda",8.50f);
+
+
+
 
     }
 }
