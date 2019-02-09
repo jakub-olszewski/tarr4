@@ -19,6 +19,8 @@ public class ZadaniePetlaFor {
          */
         List<PozycjaZamowienia> listaZamowien = new ArrayList<PozycjaZamowienia>();
         listaZamowien.add(new PozycjaZamowienia("Papier A4",11.15f));
+        listaZamowien.add(new PozycjaZamowienia("Papier A4",11.15f));
+
         listaZamowien.add(new PozycjaZamowienia("kanapka",16.99f));
         listaZamowien.add(new PozycjaZamowienia("frytki",6.99f));
         listaZamowien.add(new PozycjaZamowienia("pepsi",4.99f));
