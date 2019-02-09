@@ -5,6 +5,9 @@ import pl.sdacademy.tarr4.dziedziczenie.figury.Kwadrat;
 import pl.sdacademy.tarr4.dziedziczenie.figury.Prostokat;
 import pl.sdacademy.tarr4.dziedziczenie.figury.Trojkat;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Main
  *
@@ -39,5 +42,14 @@ public class Main {
         // wypisz sumę
 
 
+        List<Object> listaFigur = new ArrayList<>();
+        listaFigur.add(kwadrat);
+        listaFigur.add(kolo);
+        listaFigur.add(prostokat);
+        listaFigur.add(trojkat);
+
+        for(Object figura : listaFigur){
+            System.out.println(figura);
+        }
     }
 }
