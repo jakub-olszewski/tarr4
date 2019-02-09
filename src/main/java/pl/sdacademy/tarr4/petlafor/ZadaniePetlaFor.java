@@ -27,6 +27,11 @@ public class ZadaniePetlaFor {
 
         float suma = 0;
 
+        for (PozycjaZamowienia pozycja : listaZamowien){
+            System.out.println(pozycja);
+            suma +=pozycja.pobierzCena(); // += to zwiększanie
+        }
+
         // uzyj petli for aby zsumowac cylicznie
 
         System.out.println("Suma wynosi:"+suma);
