@@ -36,5 +36,10 @@ public class ZadaniePetlaFor {
 
         System.out.println("Suma wynosi:"+suma);
 
+        // formatowanie wyświetlania sumy
+        System.out.printf("Suma wynosi %.2f zł",suma);
+        // % wstrzykniecie danych
+        // .2 dwa miejsca po przecinku
+        // f liczba float
     }
 }
