@@ -6,6 +6,8 @@ import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Elephant;
 import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Lion;
 import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Squirrel;
 import pl.sdacademy.tarr4.dziedziczenie.animals.plants.Grass;
+import pl.sdacademy.tarr4.dziedziczenie.animals.snakes.Boa;
+import pl.sdacademy.tarr4.dziedziczenie.animals.snakes.Snake;
 
 /**
  * Main
@@ -101,9 +103,10 @@ public class Main {
          *
          */
 
-        /**
-         * Zadanie6:
-         */
+        Boa kaaBoa = new Boa("Kaa");
+        kaaBoa.strangle(bambiDeer);
+        kaaBoa.strangle(dumboElephant);
+
 
     }
 }
