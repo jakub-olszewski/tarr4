@@ -1,9 +1,6 @@
 package pl.sdacademy.tarr4.dziedziczenie;
 
-import pl.sdacademy.tarr4.dziedziczenie.figury.Kolo;
-import pl.sdacademy.tarr4.dziedziczenie.figury.Kwadrat;
-import pl.sdacademy.tarr4.dziedziczenie.figury.Prostokat;
-import pl.sdacademy.tarr4.dziedziczenie.figury.Trojkat;
+import pl.sdacademy.tarr4.dziedziczenie.figury.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,20 +39,20 @@ public class Main {
         // wypisz sumę
 
 
-        List<Object> listaFigur = new ArrayList<>();
+        List<Figura> listaFigur = new ArrayList<>();
         listaFigur.add(kwadrat);
         listaFigur.add(kolo);
         listaFigur.add(prostokat);
         listaFigur.add(trojkat);
 
         float suma=0; // suma wszystkich obwodow
-        for(Object figura : listaFigur){
+        for(Figura figura : listaFigur){
             /**
              * Sumowanie obwodow w petli
              */
             System.out.println(figura);
+            suma += figura.obliczObwod();
         }
-
         System.out.printf("Suma wszystkich obwodów równa %.2f",suma);
     }
 }

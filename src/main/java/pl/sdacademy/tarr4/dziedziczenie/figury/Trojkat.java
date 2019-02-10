@@ -6,7 +6,7 @@ package pl.sdacademy.tarr4.dziedziczenie.figury;
  * @author: Jakub Olszewski [http://github.com/jakub-olszewski]
  * @date: 09.02.2019 15:45
  **/
-public class Trojkat {
+public class Trojkat extends Figura{
 
     private final float bokA;
     private final float bokB;

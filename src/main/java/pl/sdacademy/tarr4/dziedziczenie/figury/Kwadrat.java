@@ -6,7 +6,7 @@ package pl.sdacademy.tarr4.dziedziczenie.figury;
  * @author: Jakub Olszewski [http://github.com/jakub-olszewski]
  * @date: 09.02.2019 15:43
  **/
-public class Kwadrat{
+public class Kwadrat extends Figura{
 
     float bok;
 
@@ -19,7 +19,7 @@ public class Kwadrat{
         return "Kwadrat "+" bok="+bok+" obwód="+obliczObwod();
     }
 
-    private float obliczObwod() {
+    public float obliczObwod() {
         return 4*bok;
     }
 

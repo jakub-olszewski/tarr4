@@ -6,7 +6,7 @@ package pl.sdacademy.tarr4.dziedziczenie.figury;
  * @author: Jakub Olszewski [http://github.com/jakub-olszewski]
  * @date: 09.02.2019 15:44
  **/
-public class Kolo {
+public class Kolo extends Figura {
     private final float promien;
 
     public Kolo(float promien) {
