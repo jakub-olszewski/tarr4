@@ -11,16 +11,13 @@ import java.util.Scanner;
  * @author: Jakub Olszewski [http://github.com/jakub-olszewski]
  * @date: 10.02.2019 14:20
  **/
-public class MenuView {
-
-    private Data data;
+public class MenuView extends View{
 
     public MenuView(Data data) {
-        this.data = data;
-        build();
+        super(data);
     }
 
-    private void build() {
+    protected void build() {
         System.out.println("========================");
         System.out.println("Menu");
         System.out.println("========================");
@@ -32,9 +29,9 @@ public class MenuView {
         Scanner skaner = new Scanner(System.in);
         int choosedNumber = skaner.nextInt();
         if(choosedNumber==0){
-            data.setChoosedOption(Option.CLOSE);
+            getData().setChoosedOption(Option.CLOSE);
         }else if(choosedNumber==1){
-            data.setChoosedOption(Option.ADD);
+            getData().setChoosedOption(Option.ADD);
         }
     }
 
@@ -43,6 +40,6 @@ public class MenuView {
      * @return opcje
      */
     public Option getChoose() {
-        return null;
+        return getData().getChoosedOption();
     }
 }

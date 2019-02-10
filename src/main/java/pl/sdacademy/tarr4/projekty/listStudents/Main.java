@@ -2,6 +2,7 @@ package pl.sdacademy.tarr4.projekty.listStudents;
 
 import pl.sdacademy.tarr4.projekty.listStudents.data.Data;
 import pl.sdacademy.tarr4.projekty.listStudents.elements.Option;
+import pl.sdacademy.tarr4.projekty.listStudents.views.AddView;
 import pl.sdacademy.tarr4.projekty.listStudents.views.MenuView;
 
 /**
@@ -36,18 +37,23 @@ public class Main {
         boolean endProgram = false;
         Data data = new Data();
 
-        while (endProgram){
+        // while wykonuj się dopuki
+        // to co jest w nawiasie(warunek) jest spelniony
+        while (!endProgram){
             MenuView menuView = new MenuView(data);
             Option choosedOption = menuView.getChoose();
             switch (choosedOption){
                 case ADD:
+                    //new AddView(data);
                     break;
                 case REMOVE:
+                    break;
+                case CLOSE:
+                    endProgram = true;
                     break;
                 default:
                     System.out.println("Brak wybranej opcji!");
             }
-
         }
         System.out.println("Program został zakończony!");
     }
