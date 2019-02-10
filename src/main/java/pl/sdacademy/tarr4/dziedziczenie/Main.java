@@ -48,8 +48,14 @@ public class Main {
         listaFigur.add(prostokat);
         listaFigur.add(trojkat);
 
+        float suma=0; // suma wszystkich obwodow
         for(Object figura : listaFigur){
+            /**
+             * Sumowanie obwodow w petli
+             */
             System.out.println(figura);
         }
+
+        System.out.printf("Suma wszystkich obwodów równa %.2f",suma);
     }
 }
