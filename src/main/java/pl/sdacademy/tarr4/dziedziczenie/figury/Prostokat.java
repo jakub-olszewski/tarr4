@@ -14,4 +14,16 @@ public class Prostokat {
         this.bokA = bokA;
         this.bokB = bokB;
     }
+
+    @Override
+    public String toString() {
+        return "Prostokat{" +
+                "bokA=" + bokA +
+                ", bokB=" + bokB +", obwod="+obliczObwod()+
+                '}';
+    }
+
+    public float obliczObwod() {
+        return 2*bokA+2*bokB;
+    }
 }

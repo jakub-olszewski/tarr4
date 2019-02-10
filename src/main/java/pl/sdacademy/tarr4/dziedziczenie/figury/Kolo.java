@@ -12,4 +12,15 @@ public class Kolo {
     public Kolo(float promien) {
         this.promien = promien;
     }
+
+    @Override
+    public String toString() {
+        return "Kolo{" +
+                "promien=" + promien +" obwod="+obliczObwod()+
+                '}';
+    }
+
+    public float obliczObwod() {
+        return (float)(2*Math.PI*promien);
+    }
 }

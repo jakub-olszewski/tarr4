@@ -17,4 +17,17 @@ public class Trojkat {
         this.bokB = bokB;
         this.bokC = bokC;
     }
+
+    @Override
+    public String toString() {
+        return "Trojkat{" +
+                "bokA=" + bokA +
+                ", bokB=" + bokB +
+                ", bokC=" + bokC + " obwod="+obliczObwod()+
+                '}';
+    }
+
+    public float obliczObwod() {
+        return bokA+bokB+bokC;
+    }
 }
