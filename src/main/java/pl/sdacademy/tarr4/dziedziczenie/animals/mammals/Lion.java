@@ -15,7 +15,17 @@ public class Lion extends Mammal implements Predator {
     }
 
     @Override
-    public void eat(Animal animal) {
+    public void eat(Animal animal)
+    {
+        if (animal.isEscape())
+        {
+            System.out.printf("\n%s: %s uciekłeś mi :(",this.getName(),animal.getName());
+        }
+        else
+        {
+            System.out.printf("\n%s: %s złapałem Cię i zjadłem",this.getName(),animal.getName());
+        }
+
         // kod opisujacy wykonanie metody przez Lion
     }
 }

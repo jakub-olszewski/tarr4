@@ -1,6 +1,8 @@
 package pl.sdacademy.tarr4.dziedziczenie.animals;
 
 import pl.sdacademy.tarr4.dziedziczenie.animals.birds.Eagle;
+import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Elephant;
+import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Lion;
 import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Squirrel;
 
 /**
@@ -73,6 +75,10 @@ public class Main {
          * Elephant ucieka.
          * Lion chce to zjeść.
          */
+        Lion kingLion = new Lion("King Lion");
+        Elephant dumboElephant = new Elephant("Dumbo");
+        dumboElephant.runAwayFrom(kingLion);
+        kingLion.eat(dumboElephant);
 
         /**
          * Zadanie4:Utworz jelenia.
@@ -80,5 +86,6 @@ public class Main {
          * Lew uciekł z ZOO i chce zjeść jelenia.
          *
          */
+
     }
 }

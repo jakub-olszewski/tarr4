@@ -1,5 +1,7 @@
 package pl.sdacademy.tarr4.dziedziczenie.animals.mammals;
 
+import pl.sdacademy.tarr4.dziedziczenie.animals.Animal;
+import pl.sdacademy.tarr4.dziedziczenie.animals.interfaces.Prey;
 import pl.sdacademy.tarr4.dziedziczenie.animals.interfaces.Vegenarian;
 import pl.sdacademy.tarr4.dziedziczenie.animals.plants.Plant;
 
@@ -9,7 +11,7 @@ import pl.sdacademy.tarr4.dziedziczenie.animals.plants.Plant;
  * @author: Jakub Olszewski [http://github.com/jakub-olszewski]
  * @date: 10.02.2019 10:26
  **/
-public class Elephant extends Mammal implements Vegenarian {
+public class Elephant extends Mammal implements Vegenarian, Prey {
 
     public Elephant(String name) {
         super(name);
@@ -19,4 +21,13 @@ public class Elephant extends Mammal implements Vegenarian {
     public void eat(Plant plant) {
         // kod opisujacy wykonanie metody przez Deer
     }
+
+    @Override
+    public void runAwayFrom(Animal animal)
+    {
+        System.out.printf("\n%s uciekł przed lwem o imieniu %s",this.getName(),animal.getName());
+        this.setEscape(true);
+    }
+
+
 }

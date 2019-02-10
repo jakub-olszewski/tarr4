@@ -8,6 +8,7 @@ package pl.sdacademy.tarr4.dziedziczenie.animals;
  **/
 public class Animal {
     private String name;
+    private boolean escape;
 
     public String getName() {
         return name;
@@ -18,6 +19,19 @@ public class Animal {
     }
 
     public Animal(String name) {
+
         this.name = name;
+        this.escape=false;
+        System.out.printf("\n%s urodził się",this.getName());
+    }
+
+    public boolean isEscape()
+    {
+        return escape;
+    }
+
+    public void setEscape(boolean escape)
+    {
+        this.escape = escape;
     }
 }

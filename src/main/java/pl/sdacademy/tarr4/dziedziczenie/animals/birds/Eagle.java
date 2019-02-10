@@ -17,7 +17,7 @@ public class Eagle extends Bird implements Predator {
 
     @Override
     public void eat(Animal animal) {
-        System.out.printf("'%s' została zjedzona przez '%s'",animal.getName(),this.getName());
+        System.out.printf("\n'%s' została zjedzona przez '%s'",animal.getName(),this.getName());
         // kod opisujacy wykonanie metody przez Eagle
     }
 }
