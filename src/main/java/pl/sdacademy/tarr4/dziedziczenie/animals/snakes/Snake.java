@@ -10,6 +10,9 @@ import pl.sdacademy.tarr4.dziedziczenie.animals.interfaces.Predator;
  * @date: 10.02.2019 10:27
  **/
 public abstract class Snake extends Animal implements Predator {
+    public Snake(String name) {
+        super(name);
+    }
 
     // metoda porzuania się zygzakiem
 

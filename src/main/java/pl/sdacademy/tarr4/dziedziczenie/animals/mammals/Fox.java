@@ -11,6 +11,10 @@ import pl.sdacademy.tarr4.dziedziczenie.animals.interfaces.Predator;
  **/
 public class Fox extends Mammal implements Predator {
 
+    public Fox(String name) {
+        super(name);
+    }
+
     @Override
     public void eat(Animal animal) {
         // kod opisujacy wykonanie metody przez Fox

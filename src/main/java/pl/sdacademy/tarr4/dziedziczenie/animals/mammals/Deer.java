@@ -11,6 +11,10 @@ import pl.sdacademy.tarr4.dziedziczenie.animals.plants.Plant;
  **/
 public class Deer extends Mammal implements Vegenarian {
 
+    public Deer(String name) {
+        super(name);
+    }
+
     @Override
     public void eat(Plant plant) {
         // kod opisujacy wykonanie metody przez Deer

@@ -11,6 +11,10 @@ import pl.sdacademy.tarr4.dziedziczenie.animals.interfaces.Predator;
  **/
 public class Stork extends Bird implements Predator {
 
+    public Stork(String name) {
+        super(name);
+    }
+
     @Override
     public void eat(Animal animal) {
         // kod opisujacy wykonanie metody przez Stork

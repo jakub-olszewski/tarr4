@@ -9,4 +9,7 @@ import pl.sdacademy.tarr4.dziedziczenie.animals.Animal;
  * @date: 10.02.2019 10:28
  **/
 public class Bird extends Animal {
+    public Bird(String name) {
+        super(name);
+    }
 }

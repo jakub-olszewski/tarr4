@@ -10,6 +10,10 @@ import pl.sdacademy.tarr4.dziedziczenie.animals.Animal;
  **/
 public class Boa extends Snake {
 
+    public Boa(String name) {
+        super(name);
+    }
+
     @Override
     public void eat(Animal animal) {
         // kod opisujacy wykonanie metody przez Deer
