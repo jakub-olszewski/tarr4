@@ -39,6 +39,14 @@ public class Main {
         while (endProgram){
             MenuView menuView = new MenuView(data);
             Option choosedOption = menuView.getChoose();
+            switch (choosedOption){
+                case ADD:
+                    break;
+                case REMOVE:
+                    break;
+                default:
+                    System.out.println("Brak wybranej opcji!");
+            }
 
         }
         System.out.println("Program został zakończony!");
