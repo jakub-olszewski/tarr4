@@ -12,14 +12,36 @@ public class Main {
          * Zadanie: Utworz odpowiednie zwierzaki
          *
          * Classes:
-         * Deer, Squirrel, Elephant, Fox, Whale, Snake, Eagle, Stork, Lion,
-         * Sunflower, Grass
+         * Deer, - Mammal, Vegenarian
+         * Squirrel, - Mammal, Vegenarian, Prey
+         * Elephant, - Mammal, Vegenarian
+         * Fox, - Mammal, Predator
+         * Whale, - Mammal, Predator
+         * Snake, - Animal, Predator
+         * Eagle, - Bird, Predator
+         * Stork, - Bird, Predator
+         * Lion, - Mammal, Predator
+         * Sunflower, - Plant
+         * Grass, - Plant
          *
          * Interfaces:
-         * Vegenarian, Predator, Prey
+         * Vegenarian, - methods: eat(Plant plant)
+         * Predator, - methods: eat(Animal animal)
+         * Prey, - methods: runAwayFrom(Animal animal)
          *
          * Extends classes:
-         * Bird, Animal, Mammal, Plant
+         * Bird, - Animal
+         * Animal,
+         * Mammal, - Animal
+         * Plant
          */
+
+        /**
+         * Ważne!!!
+         * - Interfejsy nie posiadają ciał metod !
+         * - W klasach implementujemy metody z interfejsów
+         *
+         */
+
     }
 }
