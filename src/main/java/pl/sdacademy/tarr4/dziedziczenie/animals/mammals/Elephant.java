@@ -22,12 +22,7 @@ public class Elephant extends Mammal implements Vegenarian, Prey {
         // kod opisujacy wykonanie metody przez Deer
     }
 
-    @Override
-    public void runAwayFrom(Animal animal)
-    {
-        System.out.printf("\n%s uciekł przed lwem o imieniu %s",this.getName(),animal.getName());
-        this.setEscape(true);
-    }
+
 
 
 }

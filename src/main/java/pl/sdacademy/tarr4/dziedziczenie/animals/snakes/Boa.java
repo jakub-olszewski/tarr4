@@ -19,5 +19,6 @@ public class Boa extends Snake {
         // kod opisujacy wykonanie metody przez Deer
     }
 
-    // metoda duszenia
+    // metoda duszenia strangle(Animal animal)
+    // nie może udusić słonia!
 }

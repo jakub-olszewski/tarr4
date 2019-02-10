@@ -14,6 +14,6 @@ public abstract class Snake extends Animal implements Predator {
         super(name);
     }
 
-    // metoda porzuania się zygzakiem
+    // metoda poruszania się zygzakiem goZigzag()
 
 }

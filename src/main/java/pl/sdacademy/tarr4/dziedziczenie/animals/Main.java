@@ -1,9 +1,11 @@
 package pl.sdacademy.tarr4.dziedziczenie.animals;
 
 import pl.sdacademy.tarr4.dziedziczenie.animals.birds.Eagle;
+import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Deer;
 import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Elephant;
 import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Lion;
 import pl.sdacademy.tarr4.dziedziczenie.animals.mammals.Squirrel;
+import pl.sdacademy.tarr4.dziedziczenie.animals.plants.Grass;
 
 /**
  * Main
@@ -67,8 +69,8 @@ public class Main {
          *
          * 'imieWiewiorki' została zjedzona przez 'imieOrła'
          */
-        Eagle whiteEagle = new Eagle("orel1");
-        whiteEagle.eat(pinky);
+        Eagle baldEagle = new Eagle("Bald Eagle");
+        baldEagle.eat(pinky);
 
         /**
          * Zadanie3:Utworz obiekt Lion i Elephant.
@@ -81,10 +83,26 @@ public class Main {
         kingLion.eat(dumboElephant);
 
         /**
-         * Zadanie4:Utworz jelenia.
-         * Jeleń je trawe. Wystraszył się i ucieka.
-         * Lew uciekł z ZOO i chce zjeść jelenia.
+         * Zadanie4:Utworz jelonek 'Bambi'.
+         * jelonek je trawe. Wystraszył się i ucieka.
+         * Lew uciekł z ZOO i chce zjeść jelonka.
          *
+         */
+        Deer bambiDeer = new Deer ("Bambi");
+        Grass grass = new Grass("Trawa");
+        bambiDeer.eat(grass);
+
+        bambiDeer.runAwayFrom(kingLion);
+        kingLion.eat(bambiDeer);
+
+        /**
+         * Zadanie5: Boa 'Kaa' próbuje udusić jelonka. Udaje mu się. :(
+         * Potem próbuje udusić słonia i ma problem.
+         *
+         */
+
+        /**
+         * Zadanie6:
          */
 
     }

@@ -34,4 +34,9 @@ public class Animal {
     {
         this.escape = escape;
     }
+        public void runAwayFrom(Animal animal)
+    {
+        System.out.printf("\n%s uciekł przed %s",this.getName(),animal.getName());
+        this.setEscape(true);
+    }
 }
